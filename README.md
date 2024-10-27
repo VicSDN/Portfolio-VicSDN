@@ -1,2 +1,2 @@
 # Portfolio-VicSDN
-Repository mi personal portfolio.
+Repository my personal portfolio.
