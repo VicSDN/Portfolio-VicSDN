@@ -1,0 +1,12 @@
+{
+  "greeting": "Hello",
+  "meeting": "Welcome to my portfolio",
+  "aboutMe": {
+    "title": "About Me",
+    "description": "This is where I tell you about myself."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of my projects."
+  }
+}
