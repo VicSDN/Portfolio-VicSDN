@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -14,8 +13,11 @@ module.exports = {
         'dark-gray': '#2C2C2C',
         'light-gray': '#DFE1E5',
       },
+      fontFamily: {
+        title: ['Montserrat', 'sans-serif'],
+        body: ['Raleway', 'sans-serif'],
+      },
     },
-  
   },
   plugins: [],
 }
