@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <nav className="mt-4 ">
           <ul className="mt-4 flex flex-row">
             <li>
-              <Link to="/about" className="text-lg">
+              <Link to="/" className="text-lg">
                 {t("aboutMe.title")}
               </Link>
             </li>

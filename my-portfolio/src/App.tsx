@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Header />
       <main className="ml-1/3 p-4">
         <Routes>
-          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
