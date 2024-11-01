@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import SocialMedia from "./components/SocialMedia";
+import Achievements from "./pages/Achievements";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/achievements" element={<Achievements />} />
         </Routes>
       </main>
     </Router>

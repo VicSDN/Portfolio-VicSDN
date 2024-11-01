@@ -25,7 +25,7 @@ const SocialMedia: React.FC = () => {
               className="w-4 h-4 transition duration-300 text-sky-blue"
               viewBox="0 0 20 20"
               fill="currentColor"
-              style={{ transform: "translateY(4px)" }} // Mueve la flecha un poco hacia abajo
+              style={{ transform: "translateY(4px)" }} 
             >
               <path
                 fillRule="evenodd"
