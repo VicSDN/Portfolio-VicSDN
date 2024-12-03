@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "title": "My Projects",
+    "technologies": "Technologies",
+    "year": "Year",
+    "loading": "Loading projects..."
+  }
+}
