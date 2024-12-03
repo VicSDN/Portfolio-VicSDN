@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# 🚀 **Portfolio VicSDN**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi portafolio personal! Este proyecto está desarrollado con **React** y estilizado con **Tailwind CSS**, mostrando mis habilidades, proyectos y experiencia como desarrollador web.
 
-Currently, two official plugins are available:
+## 📋 **Descripción del Proyecto**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este portafolio tiene como objetivo presentar mis proyectos de desarrollo, información sobre mí y mis logros destacados. Está diseñado con un enfoque moderno, responsivo y optimizado para una experiencia de usuario fluida.
 
-## Expanding the ESLint configuration
+## 🛠️ **Tecnologías Utilizadas**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca para construir interfaces de usuario interactivas.
+- **Tailwind CSS**: Framework de CSS para diseñar componentes de manera eficiente.
+- **React Router**: Para la navegación entre secciones.
+- **i18n**: Soporte multilenguaje (Español e Inglés).
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 **Estructura del Proyecto**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```plaintext
+portfolio-vicsdn/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/           # Imágenes y recursos
+│   ├── components/       # Componentes reutilizables (Header, SocialMedia, etc.)
+│   ├── pages/            # Páginas principales (AboutMe, Projects, Achievements)
+│   ├── App.jsx           # Componente principal de la aplicación
+│   ├── main.jsx          # Punto de entrada principal
+│   └── index.css         # Configuración de estilos globales
+├── package.json          # Dependencias y scripts
+└── README.md             # Documentación del proyecto
