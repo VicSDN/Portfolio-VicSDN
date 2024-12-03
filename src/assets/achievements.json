@@ -1,0 +1,26 @@
+{
+  "en": [
+    {
+      "title": "Full Stack Developer",
+      "description": "A comprehensive course on full-stack web development.",
+      "image": "/images/full-stack-open.jpg"
+    },
+    {
+      "title": "Database Programming Certification",
+      "description": "A certification in database design and management.",
+      "image": "/images/database-certification.jpg"
+    }
+  ],
+  "es": [
+    {
+      "title": "Full Stack Developer",
+      "description": "Un curso completo sobre desarrollo web full-stack.",
+      "image": "/images/full-stack-open.jpg"
+    },
+    {
+      "title": "Certificación en Programación de Bases de Datos",
+      "description": "Una certificación en diseño y gestión de bases de datos.",
+      "image": "/images/database-certification.jpg"
+    }
+  ]
+}
