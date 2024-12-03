@@ -1,15 +1,14 @@
-import * as React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SocialMedia from "./components/SocialMedia";
 import Header from "./components/Header";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
-import SocialMedia from "./components/SocialMedia";
 import Achievements from "./pages/Achievements";
-import "./index.css";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/Portfolio-VicSDN">
+    
       <SocialMedia />
       <Header />
       <main className="ml-1/3 p-4">
