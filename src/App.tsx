@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Achievements from "./pages/Achievements";
-import { Navigate } from "react-router-dom";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +12,6 @@ const App: React.FC = () => {
       <Header />
       <main className="ml-1/3 p-4">
         <Routes>
-          <Route path="/" element={<Navigate to="/aboutMe" />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/achievements" element={<Achievements />} />
