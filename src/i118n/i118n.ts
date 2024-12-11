@@ -26,10 +26,11 @@ i18n.use(initReactI18next).init({
   resources,
   lng: "es",
   fallbackLng: "en",
-  ns: ["header", "projects","achievements"],
+  ns: ["header", "projects", "achievements"],
   interpolation: {
     escapeValue: false,
   },
+  returnObjects: true, 
 });
 
 export default i18n;

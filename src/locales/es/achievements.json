@@ -1,17 +1,18 @@
 {
     "achievements": {
-      "list": [
-        {
-          "title": "Logro 1",
-          "description": "Descripción del logro 1",
-          "image": "/assets/images/achievement1.jpg"
-        },
-        {
-          "title": "Logro 2",
-          "description": "Descripción del logro 2",
-          "image": "/assets/images/achievement2.jpg"
-        }
-      ]
+        "title": "Certificaciones y Cursos",
+        "description": "Aquí están algunas de las certificaciones y cursos que he completado.",
+        "list": [
+            {
+                "title": "Titulo Bachiller",
+                "description": "Bachillerato Ciencias Sociales",
+                "image": "/assets/images/Bachelor.webp"
+            },
+            {
+                "title": "Logro 2",
+                "description": "Descripción del logro 2",
+                "image": "/assets/images/achievement2.jpg"
+            }
+        ]
     }
-  }
-  
+}
