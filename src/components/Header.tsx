@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import SpanishFlag from "../assets/SpanishFlag.svg";
-import EnglishFlag from "../assets/EnglishFlag.svg";
+import SpanishFlag from "../assets/flags/SpanishFlag.svg";
+import EnglishFlag from "../assets/flags/EnglishFlag.svg";
 
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();

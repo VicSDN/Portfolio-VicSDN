@@ -1,0 +1,17 @@
+{
+    "achievements": {
+      "list": [
+        {
+          "title": "Achievement 1",
+          "description": "Description for achievement 1",
+          "image": "/assets/images/achievement1.jpg"
+        },
+        {
+          "title": "Achievement 2",
+          "description": "Description for achievement 2",
+          "image": "/assets/images/achievement2.jpg"
+        }
+      ]
+    }
+  }
+  

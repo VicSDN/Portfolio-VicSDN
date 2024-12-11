@@ -1,0 +1,17 @@
+{
+    "achievements": {
+      "list": [
+        {
+          "title": "Logro 1",
+          "description": "Descripción del logro 1",
+          "image": "/assets/images/achievement1.jpg"
+        },
+        {
+          "title": "Logro 2",
+          "description": "Descripción del logro 2",
+          "image": "/assets/images/achievement2.jpg"
+        }
+      ]
+    }
+  }
+  

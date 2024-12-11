@@ -1,48 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import achievementsData from "../assets/achievements.json"; 
+import Achievement from "../components/Achievement";
 
-interface Achievement {
+interface AchievementData {
   title: string;
   description: string;
   image: string;
 }
-interface AchievementsData {
-  en: Achievement[];
-  es: Achievement[];
-  [key: string]: Achievement[];
-}
 
 const Achievements: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const [achievements, setAchievements] = useState<Achievement[]>([]);
+  const { t } = useTranslation();
 
-  useEffect(() => {
-    
-    const language = i18n.language || "es"; 
-    const data = achievementsData as AchievementsData;  
-    setAchievements(data[language] || data.en);
-  }, [i18n.language]);
+  const achievements: AchievementData[] = Array.isArray(
+    t("achievements.list", { returnObjects: true })
+  )
+    ? (t("achievements.list", { returnObjects: true }) as AchievementData[])
+    : [];
+
   return (
-    <section className="fixed top-16 right-0 w-1/2 h-full bg-deep-dark-blue p-4">
-      <h1 className="text-2xl font-bold">{t("achievements.title")}</h1>
-      <p className="mt-2">{t("achievements.description")}</p>
+    <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
+      <h1 className="text-2xl font-bold text-white">{t("achievements.title")}</h1>
+      <p className="mt-2 text-gray-300">{t("achievements.description")}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-        {achievements.map((achievement, index) => (
-          <div
-            key={index}
-            className="bg-white text-black p-4 rounded-md shadow-lg flex flex-col items-center"
-          >
-            <img
-              src={achievement.image}
-              alt={achievement.title}
-              className="w-32 h-32 object-cover rounded-md mb-4"
+        {achievements.length > 0 ? (
+          achievements.map((achievement, index) => (
+            <Achievement
+              key={index}
+              title={achievement.title}
+              description={achievement.description}
+              image={achievement.image}
             />
-            <h3 className="font-semibold text-xl">{achievement.title}</h3>
-            <p>{achievement.description}</p>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-gray-400">{t("achievements.no_data", "No achievements available")}</p>
+        )}
       </div>
     </section>
   );

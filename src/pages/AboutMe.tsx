@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import myPhoto from "../assets/myphoto.webp";
+import myPhoto from "../assets/images/myphoto.webp";
 
 const AboutMe: React.FC = () => {
   const { t } = useTranslation();
