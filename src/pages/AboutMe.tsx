@@ -5,6 +5,9 @@ import myPhoto from "/assets/images/myphoto.webp";
 const AboutMe: React.FC = () => {
   const { t } = useTranslation();
 
+  // Usamos `returnObjects: true` para asegurarnos de que el valor de description sea un arreglo
+  const description = t("aboutMe.description", { returnObjects: true });
+
   return (
     <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
       <div className="flex flex-col items-center mb-6">
@@ -21,9 +24,12 @@ const AboutMe: React.FC = () => {
       <h1 className="text-2xl text-neutral-600 font-title font-bold text-left mb-4">
         {t("aboutMe.title")}
       </h1>
-      <p className="text-steel-blue text-opacity-90 text-base leading-relaxed text-justify md:text-left">
-        {t("aboutMe.description")}
-      </p>
+      <div className="text-white text-opacity-90 tracking-tighter text-base leading-relaxed text-justify md:text-left">
+        {Array.isArray(description) &&
+          description.map((paragraph, index) => (
+            <p key={index} className="mb-2">{paragraph}</p>
+          ))}
+      </div>
     </section>
   );
 };

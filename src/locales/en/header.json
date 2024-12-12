@@ -3,13 +3,18 @@
   "meeting": "Welcome to my portfolio",
   "aboutMe": {
     "title": "About Me",
-    "description": "I am Victor Manuel, a web developer specializing in creating functional and attractive digital solutions, based in the Principality of Asturias. My focus is on full-stack web development, interface design, and user experience optimization, skills that I apply in projects where I use modern technologies such as Astro, React, and Java, among others. Currently, I develop and manage personal projects to constantly improve my technical skills and ensure the highest quality at every stage of the process. I have a driver's license and my own vehicle, which allows me to travel without inconvenience to collaborate on projects that require local presence or assistance in different locations."
+    "description": [
+      "Hello, my name is Víctor Manuel",
+      "I am a web developer specialized in creating functional and attractive digital solutions, based in the Principality of Asturias. My focus is on full-stack web development, interface design, and user experience optimization. I use modern technologies such as Astro, React, and Java.",
+      "Currently, I develop and manage personal projects to constantly improve my technical skills and ensure the highest quality at every stage of the process. I have a driver's license and my own vehicle, which allows me to travel without inconvenience to collaborate on projects that require local presence or assistance in different locations."
+    ]
   },
   "projects": {
     "title": "Projects",
     "description": "Here are some of my projects."
   },
   "achievements": {
- 
+    "title": "Certifications and Courses",
+    "description": "Here are some of the certifications and courses I have completed."
   }
 }

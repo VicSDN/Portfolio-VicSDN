@@ -3,16 +3,18 @@
   "meeting": "Bienvenido a mi portafolio",
   "aboutMe": {
     "title": "Sobre mí",
-    "description": "Soy Víctor Manuel, desarrollador web especializado en crear soluciones digitales funcionales y atractivas, con sede en el Principado de Asturias. Mi enfoque está en el desarrollo web full-stack, diseño de interfaces y optimización de la experiencia de usuario. Utilizo tecnologías modernas como Astro, React y Java. Actualmente, desarrollo y gestiono proyectos personales para mejorar constantemente mis habilidades técnicas y asegurar la máxima calidad en cada etapa del proceso. Cuento con carnet de conducir y vehículo propio, lo que me permite desplazarme sin inconvenientes para colaborar en proyectos que requieran presencia local o asistencia en diferentes ubicaciones."
+    "description": [
+      "Hola, mi nombre es Víctor Manuel",
+      "Soy desarrollador web especializado en crear soluciones digitales funcionales y atractivas, con sede en el Principado de Asturias. Mi enfoque está en el desarrollo web full-stack, diseño de interfaces y optimización de la experiencia de usuario. Utilizo tecnologías modernas como Astro, React y Java.",
+      "Actualmente, desarrollo y gestiono proyectos personales para mejorar constantemente mis habilidades técnicas y asegurar la máxima calidad en cada etapa del proceso.Cuento con carnet de conducir y vehículo propio, lo que me permite desplazarme sin inconvenientes para colaborar en proyectos que requieran presencia local o asistencia en diferentes ubicaciones."
+    ]
   },
   "projects": {
     "title": "Proyectos",
     "description": "Aquí hay algunos de mis proyectos."
   },
-  
   "achievements": {
     "title": "Certificaciones y Cursos",
     "description": "Aquí están algunas de las certificaciones y cursos que he completado."
   }
 }
-
