@@ -6,7 +6,7 @@
             {
                 "title": "Titulo Bachiller",
                 "description": "Bachillerato Ciencias Sociales",
-                "image": "/assets/images/Bachelor.webp"
+                "image": "./assets/images/Bachelor.webp"
             },
             {
                 "title": "Logro 2",

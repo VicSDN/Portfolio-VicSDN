@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import logo from "../assets/images/logo.webp";
-import Github from "../assets/logos/Github.svg";
-import Linkedin from "../assets/logos/Linkedin.svg";
-import Twitter from "../assets/logos/Twitter.svg";
+import logo from "/assets/images/logo.webp";
+import Github from "/assets/logos/Github.svg";
+import Linkedin from "/assets/logos/Linkedin.svg";
+import Twitter from "/assets/logos/Twitter.svg";
 
 const SocialMedia: React.FC = () => {
   const [hovered, setHovered] = useState(false);
