@@ -4,8 +4,6 @@ import myPhoto from "/assets/images/myphoto.webp";
 
 const AboutMe: React.FC = () => {
   const { t } = useTranslation();
-
-  // Usamos `returnObjects: true` para asegurarnos de que el valor de description sea un arreglo
   const description = t("aboutMe.description", { returnObjects: true });
 
   return (

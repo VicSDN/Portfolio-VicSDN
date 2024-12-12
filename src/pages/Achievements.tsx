@@ -25,9 +25,8 @@ const Achievements: React.FC = () => {
   return (
      <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
     <div className="flex flex-col h-full">
-      {/* Achievements Section */}
-      <section className="w-full h-full bg-deep-dark-blue p-4 md:p-6 overflow-y-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="w-full h-full bg-deep-dark-blue p-12 md:p-6 overflow-y-auto">
+        <div className="grid grid-row sm:grid-row-1 gap-6">
           {Array.isArray(achievements) && achievements.length > 0 ? (
             achievements.map((achievement, index) => (
               <Card
@@ -44,8 +43,6 @@ const Achievements: React.FC = () => {
           )}
         </div>
       </section>
-
-      {/* Modal */}
       {selectedAchievement && (
         <Modal onClose={handleModalClose}>
           <div className="p-6 text-center">
