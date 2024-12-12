@@ -9,7 +9,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ image, title, onClick }) => {
   return (
     <div
-      className="relative w-full h-48 sm:h-60 bg-cover bg-center rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+      className="w-[75%] h-48 sm:h-60 bg-cover bg-center rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105"
       onClick={onClick}
     >
       <img

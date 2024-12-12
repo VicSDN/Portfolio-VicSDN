@@ -24,9 +24,17 @@ const Achievements: React.FC = () => {
 
   return (
      <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
-    <div className="flex flex-col h-full">
+      <span>
+      <h1 className="text-2xl text-neutral-600 font-title font-bold text-left mb-4">
+        {t("achievements.title")}
+      </h1>
+      <p className="text-steel-blue text-opacity-90 text-base leading-relaxed text-justify md:text-left">
+        {t("achievements.description")}
+      </p>
+      </span>
+    <div className="flex flex-col h-full ">
       <section className="w-full h-full bg-deep-dark-blue p-12 md:p-6 overflow-y-auto">
-        <div className="grid grid-row sm:grid-row-1 gap-6">
+        <div className="grid grid-row place-items-center sm:grid-row-1 gap-6">
           {Array.isArray(achievements) && achievements.length > 0 ? (
             achievements.map((achievement, index) => (
               <Card
@@ -46,7 +54,7 @@ const Achievements: React.FC = () => {
       {selectedAchievement && (
         <Modal onClose={handleModalClose}>
           <div className="p-6 text-center">
-            <h2 className="text-2xl font-bold mb-4">{selectedAchievement.title}</h2>
+            <h2 className="text-2xl text-white text-opacity-90 font-title font-bold mb-4">{selectedAchievement.title}</h2>
             <img
               src={selectedAchievement.image}
               alt={selectedAchievement.title}
@@ -55,9 +63,9 @@ const Achievements: React.FC = () => {
             <p className="text-gray-300">{selectedAchievement.description}</p>
             <button
               onClick={handleModalClose}
-              className="mt-4 px-6 py-2 bg-primary text-white rounded-lg text-sm hover:bg-secondary transition"
+              className="flex items-center justify-center w-40 px-4 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition duration-300 ease-in-out"
             >
-              {t("achievements.close", "Close")}
+              {t("close", { ns: "common" })}
             </button>
           </div>
         </Modal>

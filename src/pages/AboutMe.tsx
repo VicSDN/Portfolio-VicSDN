@@ -22,7 +22,7 @@ const AboutMe: React.FC = () => {
       <h1 className="text-2xl text-neutral-600 font-title font-bold text-left mb-4">
         {t("aboutMe.title")}
       </h1>
-      <div className="text-white text-opacity-90 tracking-tighter text-base leading-relaxed text-justify md:text-left">
+      <div className="text-white text-opacity-90 tracking-wide text-base leading-relaxed text-justify md:text-left">
         {Array.isArray(description) &&
           description.map((paragraph, index) => (
             <p key={index} className="mb-2">{paragraph}</p>
