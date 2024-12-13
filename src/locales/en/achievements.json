@@ -6,12 +6,12 @@
         {
           "title": "High School Diploma",
           "description": "Social Sciences High School",
-          "image": "/assets/images/bachelor.webp"
+          "image": "./assets/images/bachelor.webp"
         },
         {
           "title": "FullStack Bootcamp 750 Hours",
           "description": "Description for achievement 2",
-          "image": ["/assets/images/bootcamp.webp", "/assets/images/bootcamp2.webp"]
+          "image": ["./assets/images/bootcamp.webp"]
         }
       ]
     }

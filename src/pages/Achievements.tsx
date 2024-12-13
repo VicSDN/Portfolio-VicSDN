@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 
 interface Achievement {
-  image: string | string[];
+  image: string ;
   title: string;
   description: string;
 }
@@ -71,24 +71,18 @@ const Achievements: React.FC = () => {
               <h2 className="text-2xl text-white text-opacity-90 font-title font-bold mb-4">
                 {selectedAchievement.title}
               </h2>
-
-              {Array.isArray(selectedAchievement.image) ? (
-                <div className="relative" data-carousel="static">
-                  <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-                    <div className="duration-700 ease-in-out">
-                      <img
-                        src={selectedAchievement.image[currentImageIndex]}
-                        alt={selectedAchievement.title}
-                        className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 rounded-lg"
-                      />
-                    </div>
-                  </div>
-
+              {Array.isArray(selectedAchievement?.image) ? (
+                <div className="relative">
+                  <img
+                    src={selectedAchievement.image[currentImageIndex]}
+                    alt={selectedAchievement.title}
+                    className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 rounded-lg"
+                  />
                   <button
                     onClick={handlePrevImage}
                     className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   >
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 dark:bg-gray-800/30">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
                       <svg
                         className="w-5 h-5 text-white"
                         fill="none"
@@ -109,7 +103,7 @@ const Achievements: React.FC = () => {
                     onClick={handleNextImage}
                     className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   >
-                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 dark:bg-gray-800/30">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50">
                       <svg
                         className="w-5 h-5 text-white"
                         fill="none"
@@ -152,3 +146,4 @@ const Achievements: React.FC = () => {
 };
 
 export default Achievements;
+
