@@ -1,18 +1,19 @@
 {
     "achievements": {
-        "title": "Certifications and Courses",
-        "description": "Here are some of the certifications and courses I have completed.",
-        "list": [
-            {
-                "title": "Achievement 1",
-                "description": "Description for achievement 1",
-                "image": "./assets/images/Bachelor.webp"
-            },
-            {
-                "title": "Achievement 2",
-                "description": "Description for achievement 2",
-                "image": "/assets/images/achievement2.jpg"
-            }
-        ]
+      "title": "Certifications and Courses",
+      "description": "Here are some certifications and courses I have completed.",
+      "list": [
+        {
+          "title": "High School Diploma",
+          "description": "Social Sciences High School",
+          "image": "/assets/images/bachelor.webp"
+        },
+        {
+          "title": "FullStack Bootcamp 750 Hours",
+          "description": "Description for achievement 2",
+          "image": ["/assets/images/bootcamp.webp", "/assets/images/bootcamp2.webp"]
+        }
+      ]
     }
-}
+  }
+  

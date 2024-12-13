@@ -1,18 +1,19 @@
 {
     "achievements": {
-        "title": "Certificaciones y Cursos",
-        "description": "Aquí están algunas de las certificaciones y cursos que he completado.",
-        "list": [
-            {
-                "title": "Titulo Bachiller",
-                "description": "Bachillerato Ciencias Sociales",
-                "image": "./assets/images/Bachelor.webp"
-            },
-            {
-                "title": "Logro 2",
-                "description": "Descripción del logro 2",
-                "image": "/assets/images/achievement2.jpg"
-            }
-        ]
+      "title": "Certificaciones y Cursos",
+      "description": "Aquí están algunas de las certificaciones y cursos que he completado.",
+      "list": [
+        {
+          "title": "Titulo Bachiller",
+          "description": "Bachillerato Ciencias Sociales",
+          "image": "/assets/images/bachelor.webp"
+        },
+        {
+          "title": "Bootcamp FullStack 750 Horas",
+          "description": "Descripción para el logro 2",
+          "image": ["/assets/images/bootcamp.webp", "/assets/images/bootcamp2.webp"]
+        }
+      ]
     }
-}
+  }
+  
