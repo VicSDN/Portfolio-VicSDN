@@ -1,13 +1,12 @@
 import React from "react";
 
 interface CardProps {
-  image: string | string[];  // Acepta un string o un array de strings
+  image: string | string[];
   title: string;
   onClick?: () => void;
 }
 
 const Card: React.FC<CardProps> = ({ image, title, onClick }) => {
-  // Si 'image' es un arreglo, usa la primera imagen. Si es un string, usa directamente esa imagen.
   const imageSrc = Array.isArray(image) ? image[0] : image;
 
   return (
