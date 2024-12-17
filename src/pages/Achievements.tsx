@@ -4,10 +4,10 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 
 interface Achievement {
-  image: string | string[]; // Acepta tanto una sola imagen como un array
+  image: string | string[];
   title: string;
   description: string;
-  projectImages?: string[]; // Nuevas imágenes para cada proyecto
+  projectImages?: string[];
 }
 
 const Achievements: React.FC = () => {
@@ -18,39 +18,19 @@ const Achievements: React.FC = () => {
   const [selectedAchievementIndex, setSelectedAchievementIndex] = useState<
     number | null
   >(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentProjectImageIndex, setCurrentProjectImageIndex] = useState(0); // Estado para el carrusel de proyectos
+  const [currentProjectImageIndex, setCurrentProjectImageIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const handleModalOpen = (index: number) => {
     setSelectedAchievementIndex(index);
-    setCurrentImageIndex(0); // Reiniciar el índice de imagen al abrir
-    setCurrentProjectImageIndex(0); // Reiniciar el índice del segundo carrusel
+    setCurrentProjectImageIndex(0); // Reiniciar el índice de imágenes del proyecto
+    setImageLoaded(false); // Reiniciar el estado de carga de imagen
   };
 
   const handleModalClose = () => {
     setSelectedAchievementIndex(null);
-    setCurrentImageIndex(0);
-    setCurrentProjectImageIndex(0); // Reiniciar el índice al cerrar
-  };
-
-  const handleNextImage = () => {
-    if (selectedAchievementIndex !== null) {
-      const images = toImageArray(achievements[selectedAchievementIndex].image);
-      if (images.length > 1) {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }
-    }
-  };
-
-  const handlePrevImage = () => {
-    if (selectedAchievementIndex !== null) {
-      const images = toImageArray(achievements[selectedAchievementIndex].image);
-      if (images.length > 1) {
-        setCurrentImageIndex(
-          (prevIndex) => (prevIndex - 1 + images.length) % images.length
-        );
-      }
-    }
+    setCurrentProjectImageIndex(0);
+    setImageLoaded(false);
   };
 
   const handleNextProjectImage = () => {
@@ -84,31 +64,6 @@ const Achievements: React.FC = () => {
     }
   };
 
-  const handleNextAchievement = () => {
-    if (selectedAchievementIndex !== null) {
-      const nextIndex = (selectedAchievementIndex + 1) % achievements.length;
-      setSelectedAchievementIndex(nextIndex);
-      setCurrentImageIndex(0);
-      setCurrentProjectImageIndex(0); // Reiniciar el índice del segundo carrusel
-    }
-  };
-
-  const handlePrevAchievement = () => {
-    if (selectedAchievementIndex !== null) {
-      const prevIndex =
-        (selectedAchievementIndex - 1 + achievements.length) %
-        achievements.length;
-      setSelectedAchievementIndex(prevIndex);
-      setCurrentImageIndex(0);
-      setCurrentProjectImageIndex(0); // Reiniciar el índice del segundo carrusel
-    }
-  };
-
-  // Convierte el campo `image` a un array para manejo uniforme
-  const toImageArray = (image: string | string[]): string[] => {
-    return Array.isArray(image) ? image : [image];
-  };
-
   return (
     <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
       <h1 className="text-2xl text-neutral-600 font-title font-bold mb-4">
@@ -122,7 +77,7 @@ const Achievements: React.FC = () => {
         {achievements.map((achievement, index) => (
           <Card
             key={index}
-            image={toImageArray(achievement.image)[0]} // Mostrar solo la primera imagen
+            image={Array.isArray(achievement.image) ? achievement.image[0] : achievement.image}
             title={achievement.title}
             onClick={() => handleModalOpen(index)}
           />
@@ -136,35 +91,17 @@ const Achievements: React.FC = () => {
               {achievements[selectedAchievementIndex].title}
             </h2>
 
+            {/* Imagen del logro (título del logro) */}
             <div className="relative w-full max-w-lg">
               <img
-                src={
-                  toImageArray(achievements[selectedAchievementIndex].image)[
-                    currentImageIndex
-                  ]
-                }
-                alt={`Imagen ${currentImageIndex + 1} del logro`}
-                className="w-full rounded-lg"
+                src={Array.isArray(achievements[selectedAchievementIndex].image)
+                  ? achievements[selectedAchievementIndex].image[0]
+                  : achievements[selectedAchievementIndex].image}
+                alt={`Imagen del logro`}
+                className={`w-full rounded-lg ${imageLoaded ? "" : "hidden"}`}
+                onLoad={() => setImageLoaded(true)} 
               />
-              {toImageArray(achievements[selectedAchievementIndex].image)
-                .length > 1 && (
-                <>
-                  {/* Botón para imagen anterior */}
-                  <button
-                    onClick={handlePrevImage}
-                    className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white"
-                  >
-                    ◀
-                  </button>
-                  {/* Botón para imagen siguiente */}
-                  <button
-                    onClick={handleNextImage}
-                    className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/30 p-2 rounded-full hover:bg-white"
-                  >
-                    ▶
-                  </button>
-                </>
-              )}
+              {!imageLoaded && <p className="text-white">Cargando imagen...</p>}
             </div>
 
             <p className="text-white text-opacity-90 text-center mt-4">
@@ -173,21 +110,16 @@ const Achievements: React.FC = () => {
 
             {achievements[selectedAchievementIndex].projectImages && (
               <>
-                <h3 className="text-xl text-white mt-6">
-                  Imágenes del Proyecto
-                </h3>
+                <h3 className="text-xl text-white mt-6">Imágenes del Proyecto</h3>
                 <div className="relative w-full max-w-lg mt-4">
                   <img
-                    src={
-                      achievements[selectedAchievementIndex].projectImages[
-                        currentProjectImageIndex
-                      ]
-                    }
+                    src={achievements[selectedAchievementIndex].projectImages[currentProjectImageIndex]}
                     alt={`Imagen del proyecto ${currentProjectImageIndex + 1}`}
-                    className="w-full rounded-lg"
+                    className={`w-full rounded-lg ${imageLoaded ? "" : "hidden"}`}
+                    onLoad={() => setImageLoaded(true)} 
                   />
-                  {achievements[selectedAchievementIndex].projectImages.length >
-                    1 && (
+                  {!imageLoaded && <p className="text-white">Cargando imagen...</p>}
+                  {achievements[selectedAchievementIndex].projectImages.length > 1 && (
                     <>
                       <button
                         onClick={handlePrevProjectImage}
@@ -209,13 +141,13 @@ const Achievements: React.FC = () => {
 
             <div className="flex gap-4 mt-4">
               <button
-                onClick={handlePrevAchievement}
+                onClick={() => setSelectedAchievementIndex(prevIndex => prevIndex !== null ? (prevIndex - 1 + achievements.length) % achievements.length : 0)}
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
               >
                 {t("previous")}
               </button>
               <button
-                onClick={handleNextAchievement}
+                onClick={() => setSelectedAchievementIndex(prevIndex => prevIndex !== null ? (prevIndex + 1) % achievements.length : 0)}
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
               >
                 {t("next")}
