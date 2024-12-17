@@ -23,8 +23,8 @@ const Achievements: React.FC = () => {
 
   const handleModalOpen = (index: number) => {
     setSelectedAchievementIndex(index);
-    setCurrentProjectImageIndex(0); // Reiniciar el índice de imágenes del proyecto
-    setImageLoaded(false); // Reiniciar el estado de carga de imagen
+    setCurrentProjectImageIndex(0);
+    setImageLoaded(false);
   };
 
   const handleModalClose = () => {
@@ -66,14 +66,15 @@ const Achievements: React.FC = () => {
 
   return (
     <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
+      <span className="p-2 flex flex-col items-start my-2">
       <h1 className="text-2xl text-neutral-600 font-title font-bold mb-4">
         {t("achievements.title")}
       </h1>
-      <p className="text-white text-opacity-90 tracking-wide text-base leading-relaxed">
+      <p className="text-white text-opacity-90 tracking-wide text-base leading-relaxed ">
         {t("achievements.description")}
       </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      </span>
+      <div className="grid grid-cols-1 place-items-center sm:grid-cols-1 gap-6">
         {achievements.map((achievement, index) => (
           <Card
             key={index}
@@ -90,8 +91,6 @@ const Achievements: React.FC = () => {
             <h2 className="text-2xl text-white font-title font-bold">
               {achievements[selectedAchievementIndex].title}
             </h2>
-
-            {/* Imagen del logro (título del logro) */}
             <div className="relative w-full max-w-lg">
               <img
                 src={Array.isArray(achievements[selectedAchievementIndex].image)
