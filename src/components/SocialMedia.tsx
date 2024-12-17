@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import logo from "/assets/images/logo.webp";
 import Github from "/assets/logos/Github.svg";
 import Linkedin from "/assets/logos/Linkedin.svg";
@@ -7,16 +7,25 @@ import Twitter from "/assets/logos/Twitter.svg";
 const SocialMedia: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [headerHeight, setHeaderHeight] = useState(0);
+  const [scrolled, setScrolled] = useState(false); 
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
-
+    
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
         setVisible(false);
       } else {
         setVisible(true);
       }
+
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+
       lastScrollY = window.scrollY;
     };
 
@@ -26,10 +35,24 @@ const SocialMedia: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const header = document.querySelector("header");
+    if (header) {
+      setHeaderHeight(header.clientHeight);
+    }
+  }, []);
+
   return (
-    
-    <div className="fixed top-0 -mb-20 h-full w-[50%] flex flex-col items-center bg-light-gray">
-      <img src={logo} alt="Logo" className="mt-4 w-[586px] h-[560px]" />
+    <div
+      className={`fixed top-0 ${scrolled ? "mt-6" : "mt-0"} left-0 h-full w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300`}
+    >
+      <img
+        src={logo}
+        alt="Logo"
+        className="mt-4 w-full max-w-[586px] h-auto object-contain sm:mt-24"
+      />
+      
       <h2
         className="text-xl font-title font-bold -mt-8 text-deep-dark-blue group text-center"
         onMouseEnter={() => setHovered(true)}
@@ -56,6 +79,7 @@ const SocialMedia: React.FC = () => {
           </div>
         )}
       </h2>
+
       <div className="flex space-x-4 mt-2 gap-3">
         <a
           href="https://github.com/VicSDN/"

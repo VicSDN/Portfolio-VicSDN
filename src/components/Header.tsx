@@ -17,22 +17,19 @@ const Header: React.FC = () => {
   return (
     <header className="fixed top-0 right-0 w-full lg:w-[50%] h-16 shadow-lg bg-navy-blue z-10 flex items-center justify-between px-4 sm:px-8">
       <div className="flex items-center justify-between w-full">
-        {/* Botón hamburguesa en pantallas pequeñas */}
         <button
           className="sm:hidden text-white text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? "×" : "☰"}
         </button>
-
-        {/* Menú de navegación, solo muestra hamburguesa en pantallas pequeñas */}
         <nav
           className={`${
             menuOpen ? "block" : "hidden"
           } md:flex lg:space-x-8 items-center flex-row md:flex-row w-full lg:w-auto`}
         >
           {/* Menú horizontal */}
-          <ul className="space-y-4 lg:space-y-0 lg:flex lg:space-x-8 justify-center lg:justify-between w-full md:w-full flex space-x-8">
+          <ul className="space-y-4 lg:space-y-0 lg:flex lg:space-x-8 justify-center lg:justify-between w-full md:w-full flex space-y-0 space-x-8">
             <li>
               <Link to="/" className="text-lg text-white hover:text-sky-blue">
                 {t("aboutMe.title")}
@@ -56,7 +53,6 @@ const Header: React.FC = () => {
             </li>
           </ul>
 
-          {/* Selector de idioma */}
           <div className="relative mt-4 lg:mt-0">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
