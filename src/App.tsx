@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Router basename="/Portfolio-VicSDN">
       <SocialMedia />
       <Header />
-      <main className="ml-1/3 p-4">
+      <main className="p-4 mt-16 md:ml-1/3 flex flex-col md:flex-row">
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
