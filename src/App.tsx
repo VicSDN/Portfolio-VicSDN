@@ -10,12 +10,14 @@ const App: React.FC = () => {
     <Router basename="/Portfolio-VicSDN">
       <SocialMedia />
       <Header />
-      <main className="p-4 mt-16 md:ml-1/3 flex flex-col md:flex-row">
-        <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/achievements" element={<Achievements />} />
-        </Routes>
+      <main className="p-4 mt-16 flex flex-col md:flex-row">
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/achievements" element={<Achievements />} />
+          </Routes>
+        </div>
       </main>
     </Router>
   );

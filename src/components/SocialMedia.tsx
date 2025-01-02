@@ -7,22 +7,15 @@ import Twitter from "/assets/logos/Twitter.svg";
 const SocialMedia: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
-    
+
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setVisible(false);
+        setVisible(false); // Ocultar al desplazarse hacia abajo
       } else {
-        setVisible(true);
-      }
-
-      if (window.scrollY > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+        setVisible(true); // Mostrar al desplazarse hacia arriba
       }
 
       lastScrollY = window.scrollY;
@@ -46,7 +39,7 @@ const SocialMedia: React.FC = () => {
         alt="Logo"
         className="mt-4 max-h-[50vh] w-full object-contain sm:mt-24"
       />
-      
+
       <h2
         className="text-xl font-title font-bold -mt-8 text-deep-dark-blue group text-center"
         onMouseEnter={() => setHovered(true)}
