@@ -15,89 +15,92 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 right-0 w-full lg:w-[50%] h-16 shadow-lg bg-navy-blue z-10 flex items-center justify-between px-4 sm:px-8">
-      <div className="flex items-center justify-between w-full">
-        <button
-          className="sm:hidden text-white text-2xl"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "×" : "☰"}
-        </button>
-        <nav
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } md:flex lg:space-x-8 items-center flex-row md:flex-row w-full lg:w-auto`}
-        >
-          {/* Menú horizontal */}
-          <ul className="space-y-4 lg:space-y-0 lg:flex lg:space-x-8 justify-center lg:justify-between w-full md:w-full flex space-y-0 space-x-8">
-            <li>
-              <Link to="/" className="text-lg text-white hover:text-sky-blue">
-                {t("aboutMe.title")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/projects"
-                className="text-lg text-white hover:text-sky-blue"
-              >
-                {t("projects.title")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/achievements"
-                className="text-lg text-white hover:text-sky-blue"
-              >
-                {t("achievements.title")}
-              </Link>
-            </li>
-          </ul>
-
-          <div className="relative mt-4 lg:mt-0">
+  <header className="fixed top-0 right-0 w-full justify-between sm:w-[50%] h-16 shadow-lg bg-navy-blue z-10 flex items-center px-4 sm:px-8 md:w-[100%] lg:w-[50%]">
+  <section className="flex justify-between">
+  <div className="flex items-center w-full">
+    <button
+      className="text-white text-2xl sm:hidden"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      {menuOpen ? "×" : "☰"}
+    </button>
+    <nav
+      className={`${
+        menuOpen ? "block" : "hidden"
+      } absolute top-16 left-0 w-full bg-navy-blue sm:block sm:relative sm:w-auto sm:top-0`}
+    >
+      <ul className="flex flex-col justify-between sm:flex-row sm:space-x-4 lg:space-x-8 items-center p-4 sm:p-0">
+        <li>
+          <Link
+            to="/"
+            className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+          >
+            {t("aboutMe.title")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/projects"
+            className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+          >
+            {t("projects.title")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/achievements"
+            className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+          >
+            {t("achievements.title")}
+          </Link>
+        </li>
+      </ul>
+    </nav>
+    <div className="relative mt-2">
+      <button
+        onClick={() => setDropdownOpen(!dropdownOpen)}
+        className="text-lg  ml-20 focus:outline-none"
+      >
+        <img
+          src={i18n.language === "es" ? SpanishFlag : EnglishFlag}
+          alt={i18n.language === "es" ? "Español" : "English"}
+          className="w-8 h-8 rounded-full"
+        />
+      </button>
+      {dropdownOpen && (
+        <ul className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-10 border">
+          <li>
             <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="text-lg focus:outline-none"
+              onClick={() => handleLanguageChange("es")}
+              className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
             >
               <img
-                src={i18n.language === "es" ? SpanishFlag : EnglishFlag}
-                alt={i18n.language === "es" ? "Español" : "English"}
-                className="w-8 h-8 rounded-full"
+                src={SpanishFlag}
+                alt="Español"
+                className="w-5 h-5 mr-2"
               />
+              Español
             </button>
-            {dropdownOpen && (
-              <ul className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-10 border">
-                <li>
-                  <button
-                    onClick={() => handleLanguageChange("es")}
-                    className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
-                  >
-                    <img
-                      src={SpanishFlag}
-                      alt="Español"
-                      className="w-5 h-5 mr-2"
-                    />
-                    Español
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => handleLanguageChange("en")}
-                    className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
-                  >
-                    <img
-                      src={EnglishFlag}
-                      alt="English"
-                      className="w-5 h-5 mr-2"
-                    />
-                    English
-                  </button>
-                </li>
-              </ul>
-            )}
-          </div>
-        </nav>
-      </div>
-    </header>
+          </li>
+          <li>
+            <button
+              onClick={() => handleLanguageChange("en")}
+              className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
+            >
+              <img
+                src={EnglishFlag}
+                alt="English"
+                className="w-5 h-5 mr-2"
+              />
+              English
+            </button>
+          </li>
+        </ul>
+      )}
+    </div>
+  </div>
+  </section>
+</header>
   );
 };
 

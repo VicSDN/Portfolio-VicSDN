@@ -7,8 +7,7 @@ import Twitter from "/assets/logos/Twitter.svg";
 const SocialMedia: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [headerHeight, setHeaderHeight] = useState(0);
-  const [scrolled, setScrolled] = useState(false); 
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -36,21 +35,16 @@ const SocialMedia: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const header = document.querySelector("header");
-    if (header) {
-      setHeaderHeight(header.clientHeight);
-    }
-  }, []);
-
   return (
     <div
-      className={`fixed top-0 ${scrolled ? "mt-6" : "mt-0"} left-0 h-full w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300`}
+      className={`fixed top-0 left-0 h-full w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300 ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}
     >
       <img
         src={logo}
         alt="Logo"
-        className="mt-4 w-full max-w-[586px] h-auto object-contain sm:mt-24"
+        className="mt-4 max-h-[50vh] w-full object-contain sm:mt-24"
       />
       
       <h2
