@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
   const description = t("aboutMe.description", { returnObjects: true });
 
   return (
-    <section className="fixed top-16 right-0 w-full md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
+    <section className="fixed top-16 right-0 w-full mb-4 md:w-1/2 h-full bg-deep-dark-blue p-6 overflow-y-auto">
       <div className="flex flex-col items-center mb-6">
         <div className="relative group w-fit">
           <div className="absolute -inset-2 filter blur-lg bg-dark-gray rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
