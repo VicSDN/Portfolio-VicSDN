@@ -7,13 +7,13 @@
           "title": "Titulo Bachiller",
           "description": "Bachillerato Ciencias Sociales",
           "image": "./assets/images/bachelor.webp",
-          "category": "Title"
+          "category": "Educación Formal"
         },
         {
           "title": "Bootcamp FullStack 750 Horas",
           "description": "Descripción para el logro 2",
           "image": ["./assets/images/bootcamp.webp"] ,
-           "category": "Title"
+           "category": "Formación Técnica"
         }
       ]
     }

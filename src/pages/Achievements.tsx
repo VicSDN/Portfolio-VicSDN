@@ -49,30 +49,30 @@ const Achievements: React.FC = () => {
      />
         ))}
       </div>
-
       {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-1"
-          onClick={handleCloseModal} 
-        >
-          <div
-            className="relative w-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg bg-black bg-opacity-10 rounded-lg"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={selectedImage}
-              alt="Imagen Grande"
-              className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
-            />
-            <button
-              onClick={handleCloseModal}
-              className="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-      )}
+  <div
+    className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-center items-center p-4 "
+    onClick={handleCloseModal}
+  >
+    <div
+      className="relative w-full max-w-screen-sm  md:max-w-screen-md lg:max-w-screen-lg  bg-black bg-opacity-10 rounded-lg"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <img
+        src={selectedImage}
+        alt="Modal"
+        className="w-full h-auto max-h-[80vh] m-4 p-4 object-contain rounded-lg"
+      />
+      <button
+        onClick={handleCloseModal}
+        className="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2"
+      >
+        ×
+      </button>
+    </div>
+  </div>
+)}
+
     </section>
   );
 };

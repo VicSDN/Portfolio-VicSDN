@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 right-0 w-full h-16 shadow-lg bg-navy-blue z-100 flex items-center justify-between p-4 lg:w-[50%]">
+    <header className="fixed top-0 right-0 w-full h-16 shadow-lg bg-navy-blue z-40 flex items-center justify-between p-4 lg:w-[50%]">
       <div className="flex items-center">
         <button
           className="text-white text-2xl sm:hidden"

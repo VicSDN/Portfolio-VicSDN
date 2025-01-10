@@ -4,7 +4,7 @@ interface CardProps {
   description: string;
   category: string;
   onCardClick: () => void;
-  showTitle?: boolean;  // Nueva prop opcional
+  showTitle?: boolean;  
 }
 
 const Card: React.FC<CardProps> = ({ image, title, description, category, onCardClick, showTitle = true }) => {
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ image, title, description, category, onCard
     >
       <div className="absolute inset-0 bg-black opacity-50 pointer-events-none"></div> 
       <div className="relative p-4 sm:p-6 lg:p-8 z-10">
-        <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      <p className="text-sm uppercase tracking-widest font-bold text-pink-400 bg-black bg-opacity-50 rounded-sm shadow-lg p-2">
           {category}
         </p>
         {showTitle && (  
