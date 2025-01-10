@@ -27,12 +27,12 @@ const Card: React.FC<CardProps> = ({ image, title, description, category, onCard
           {category}
         </p>
         {showTitle && (  
-          <p className="text-xl font-bold text-white sm:text-2xl mt-2 cursor-pointer">
+          <p className="text-xl font-bold text-light-gray sm:text-2xl mt-2 cursor-pointer">
             {title}
           </p>
         )}
         <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-8 group-hover:translate-y-0">
-          <p className="text-sm text-white">{description}</p>
+          <p className="text-sm font-semibold bg-black bg-opacity-50 text-pink-400">{description}</p>
         </div>
       </div>
     </a>

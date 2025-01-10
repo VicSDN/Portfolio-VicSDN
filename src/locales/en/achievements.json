@@ -5,13 +5,13 @@
       "list": [
         {
           "title": "High School Diploma",
-          "description": "Social Sciences High School",
+          "description": "High School Diploma in Social Sciences, focusing on economics, psychology, sociology, and history.",
           "image": "./assets/images/bachelor.webp" ,
           "category": "Formal Education"
         },
         {
           "title": "FullStack Bootcamp 750 Hours",
-          "description": "Description for achievement 2",
+          "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focused on best practices and tools like Git and Vscode.",
           "image": ["./assets/images/bootcamp.webp"] , 
            "category": "Technical Training"
         }

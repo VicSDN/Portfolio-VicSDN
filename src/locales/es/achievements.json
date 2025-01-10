@@ -5,13 +5,13 @@
       "list": [
         {
           "title": "Titulo Bachiller",
-          "description": "Bachillerato Ciencias Sociales",
+          "description": "Bachillerato en Ciencias Sociales, con enfoque en economía, psicología, sociología e historia.",
           "image": "./assets/images/bachelor.webp",
           "category": "Educación Formal"
         },
         {
           "title": "Bootcamp FullStack 750 Horas",
-          "description": "Descripción para el logro 2",
+          "description":"React, Node.js, Java, Spring Boot, MySQL, pruebas (Jest, Vitest) y seguridad (JWT, OAuth2.0). Enfoque en buenas prácticas y herramientas como Git y Vscode.",
           "image": ["./assets/images/bootcamp.webp"] ,
            "category": "Formación Técnica"
         }
