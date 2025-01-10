@@ -6,8 +6,8 @@ interface Project {
   image: string | string[];
   title: string;
   description: string;
-  projectImages?: string[];
   category: string;
+  domain?: string;  
 }
 
 const Projects: React.FC = () => {
@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
   const projects = (t("projects.list", { returnObjects: true }) as Project[]) || [];
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  
+
   const handleCardClick = (image: string) => {
     setSelectedImage(image);
   };
@@ -36,23 +36,23 @@ const Projects: React.FC = () => {
       </span>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-6">
-      {Array.isArray(projects) && projects.length > 0 ? (
-  projects.map((project, index) => (
-    <Card
-      key={index}
-      image={Array.isArray(project.image) ? project.image[0] : project.image}
-      title={project.title}
-      description={project.description}
-      category={project.category}
-      onCardClick={() =>
-        handleCardClick(Array.isArray(project.image) ? project.image[0] : project.image)
-      }
-    />
-  ))
-) : (
-  <p className="text-white">No projects available.</p>
-)}
-
+        {Array.isArray(projects) && projects.length > 0 ? (
+          projects.map((project, index) => (
+            <Card
+              key={index}
+              image={Array.isArray(project.image) ? project.image[0] : project.image}
+              title={project.title}
+              description={project.description}
+              category={project.category}
+              domain={project.domain}
+              onCardClick={() =>
+                handleCardClick(Array.isArray(project.image) ? project.image[0] : project.image)
+              }
+            />
+          ))
+        ) : (
+          <p className="text-white">No projects available.</p>
+        )}
       </div>
 
       {selectedImage && (

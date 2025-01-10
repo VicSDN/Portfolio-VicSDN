@@ -1,8 +1,22 @@
 {
   "projects": {
-    "title": "My Projects",
-    "technologies": "Technologies",
-    "year": "Year",
-    "loading": "Loading projects..."
+    "title": "Personal Projects",
+    "description": "My personal projects",
+    "list": [
+      {
+        "title": "Cangas Cup",
+        "description": "Website created for Cangas Cup fans where they can check results, team and player information, schedules, etc.",
+        "image": "./assets/images/cangascup.webp",
+        "category": "Formal Education",
+        "domain": "https://www.cangascup.es"
+      },
+      {
+        "title": "FullStack Bootcamp 750 Hours",
+        "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focused on best practices and tools like Git and Vscode.",
+        "image": ["./assets/images/bootcamp.webp"],
+        "category": "Technical Training",
+        "domain": "Web Development"
+      }
+    ]
   }
 }
