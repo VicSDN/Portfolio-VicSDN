@@ -6,16 +6,16 @@
       {
         "title": "Cangas Cup",
         "description": "Página Web creada para los aficionados de la Cangas cup donde pueden consultar resultados, informacion de cada equipo y jugador , horarios etc.",
-        "image": "./assets/images/cangascup.webp",
-        "category": "Formal Education",
+        "image": "./assets/images/projects/cangascup.webp",
+        "category": "Astro y Supabase",
         "domain": "https://www.cangascup.es"
       },
       {
-        "title": "Cangas Cup ",
-        "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focused on best practices and tools like Git and Vscode.",
+        "title": "Portfolio Personal",
+        "description": "Mi portfolio personal, creado con el framework React",
         "image": ["./assets/images/bootcamp.webp"],
-        "category": "Technical Training",
-        "domain": "Web Development"
+        "category": "React y Taildwind",
+        "domain": "https://vicsdn.github.io/Portfolio-VicSDN/"
       }
     ]
   }

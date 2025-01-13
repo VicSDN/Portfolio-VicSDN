@@ -5,17 +5,17 @@
     "list": [
       {
         "title": "Cangas Cup",
-        "description": "Website created for Cangas Cup fans where they can check results, team and player information, schedules, etc.",
-        "image": "./assets/images/cangascup.webp",
-        "category": "Formal Education",
+        "description": "Website created for the fans of the Cangas Cup where they can check results, information about each team and player, schedules, etc.",
+        "image": "./assets/images/projects/cangascup.webp",
+        "category": "Astro and Supabase",
         "domain": "https://www.cangascup.es"
       },
       {
-        "title": "FullStack Bootcamp 750 Hours",
-        "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focused on best practices and tools like Git and Vscode.",
+        "title": "Personal Portfolio",
+        "description": "My personal portfolio, created with the React framework",
         "image": ["./assets/images/bootcamp.webp"],
-        "category": "Technical Training",
-        "domain": "Web Development"
+        "category": "React and Tailwind",
+        "domain": "https://vicsdn.github.io/Portfolio-VicSDN/"
       }
     ]
   }

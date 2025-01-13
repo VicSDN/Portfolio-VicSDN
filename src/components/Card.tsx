@@ -5,7 +5,7 @@ interface CardProps {
   category: string;
   onCardClick: () => void;
   showTitle?: boolean;
-  domain?: string;  // Añadir domain como opcional
+  domain?: string;  
 }
 
 const Card: React.FC<CardProps> = ({
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
       className="group relative block bg-black rounded-lg overflow-hidden shadow-lg"
       style={{
         width: "100%",
-        height: "250px",
+        height: "240px",
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -32,16 +32,16 @@ const Card: React.FC<CardProps> = ({
     >
       <div className="absolute inset-0 bg-black opacity-50 pointer-events-none"></div>
       <div className="relative p-4 sm:p-6 lg:p-8 z-10">
-        <p className="text-sm uppercase tracking-widest font-bold text-pink-400 bg-black bg-opacity-50 rounded-sm shadow-lg p-2">
+        <p className="text-sm uppercase tracking-widest font-bold bg-stone-500 bg-opacity-70 text-indigo-200 rounded-sm shadow-lg p-2">
           {category}
         </p>
         {showTitle && (
-          <p className="text-xl font-bold text-light-gray sm:text-2xl mt-2 cursor-pointer">
+          <p className="text-xl font-bold text-light-gray sm:text-xl  cursor-pointer">
             {title}
           </p>
         )}
         <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-8 group-hover:translate-y-0">
-          <p className="text-sm font-semibold bg-black bg-opacity-50 text-pink-400">{description}</p>
+          <p className="p-2  text-sm font-semibold bg-stone-500 bg-opacity-70 text-indigo-200">{description}</p>
         </div>
         {domain && (
   <div className="mt-2 text-center">
@@ -49,7 +49,7 @@ const Card: React.FC<CardProps> = ({
       href={domain}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-black bg-opacity-80 p-2 text-pink-400 font-bold text-sm hover:underline transition-all duration-300 transform hover:scale-105"
+      className="bg-stone-600 bg-opacity-80 p-2 text-indigo-200 font-bold text-sm hover:underline transition-all duration-300 transform hover:scale-105"
     >
       {domain}
     </a>

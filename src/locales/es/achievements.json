@@ -6,15 +6,28 @@
         {
           "title": "Titulo Bachiller",
           "description": "Bachillerato en Ciencias Sociales, con enfoque en economía, psicología, sociología e historia.",
-          "image": "./assets/images/bachelor.webp",
+          "image": "./assets/images/achievements/bachelor.webp",
           "category": "Educación Formal"
         },
         {
           "title": "Bootcamp FullStack 750 Horas",
           "description":"React, Node.js, Java, Spring Boot, MySQL, pruebas (Jest, Vitest) y seguridad (JWT, OAuth2.0). Enfoque en buenas prácticas y herramientas como Git y Vscode.",
-          "image": ["./assets/images/bootcamp.webp"] ,
+          "image": ["./assets/images/achievements/bootcamp.webp"] ,
            "category": "Formación Técnica"
-        }
+        },
+        {
+          "title": "Introducción a la ciberseguridad",
+          "description": "Curso de Networking Academy que cubre los fundamentos de la ciberseguridad y cómo proteger sistemas contra amenazas comunes.",
+          "image": ["./assets/images/achievements/CyberIn.webp"] ,
+           "category": "Formación Técnica"
+        },
+        {
+          "title": "Fundamentos con Python 2",
+          "description": "Curso introductorio sobre Python 2, cubriendo lo esencial para empezar a programar en este lenguaje.",
+          "image": ["./assets/images/achievements/ciscoPython.webp"],
+          "category": "Formación Técnica"
+      }
+      
       ]
     }
   }

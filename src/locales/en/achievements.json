@@ -1,21 +1,32 @@
 {
-    "achievements": {
-      "title": "Certifications and Courses",
-      "description": "Here are some certifications and courses I have completed.",
-      "list": [
-        {
-          "title": "High School Diploma",
-          "description": "High School Diploma in Social Sciences, focusing on economics, psychology, sociology, and history.",
-          "image": "./assets/images/bachelor.webp" ,
-          "category": "Formal Education"
-        },
-        {
-          "title": "FullStack Bootcamp 750 Hours",
-          "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focused on best practices and tools like Git and Vscode.",
-          "image": ["./assets/images/bootcamp.webp"] , 
-           "category": "Technical Training"
-        }
-      ]
-    }
+  "achievements": {
+    "title": "Certifications and Courses",
+    "description": "Here are some of the certifications and courses I have completed.",
+    "list": [
+      {
+        "title": "High School Diploma",
+        "description": "High School in Social Sciences, with a focus on economics, psychology, sociology, and history.",
+        "image": "./assets/images/achievements/bachelor.webp",
+        "category": "Formal Education"
+      },
+      {
+        "title": "FullStack Bootcamp 750 Hours",
+        "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focus on best practices and tools such as Git and Vscode.",
+        "image": ["./assets/images/achievements/bootcamp.webp"],
+        "category": "Technical Training"
+      },
+      {
+        "title": "Introduction to Cybersecurity",
+        "description": "Networking Academy course covering the basics of cybersecurity and how to protect systems from common threats.",
+        "image": ["./assets/images/achievements/CyberIn.webp"],
+        "category": "Technical Training"
+      },
+      {
+        "title": "Fundamentals with Python 2",
+        "description": "Introductory course on Python 2, covering the essentials to get started with programming in this language.",
+        "image": ["./assets/images/achievements/ciscoPython.webp"],
+        "category": "Technical Training"
+      }
+    ]
   }
-  
+}
