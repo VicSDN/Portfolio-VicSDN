@@ -24,7 +24,7 @@ const Achievements: React.FC = () => {
   };
 
   return (
-    <section className="fixed top-16 right-0 w-full md:w-1/2 h-screen bg-deep-dark-blue p-4 mb-4">
+    <section className="relative top-16 right-0 w-full sm:w-full md:w-1/2 lg:w-1/2 h-screen overflow-y-auto bg-deep-dark-blue p-6 mb-2 ml-auto">
       <span className="p-2 flex flex-col items-start my-2">
         <h1 className="text-2xl text-neutral-600 font-title font-bold mb-4">
           {t("achievements.title")}

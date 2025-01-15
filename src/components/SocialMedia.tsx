@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "/assets/images/logo.webp";
 import Github from "/assets/logos/Github.svg";
 import Linkedin from "/assets/logos/Linkedin.svg";
@@ -6,35 +6,9 @@ import Twitter from "/assets/logos/Twitter.svg";
 
 const SocialMedia: React.FC = () => {
   const [hovered, setHovered] = useState(false);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <div
-    className={`fixed top-0 left-0 h-full w-[50%] sm:w-[40%] md:w-[50%] lg:w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300 ${
-      visible ? "opacity-100" : "opacity-0"
-    }`}
-  >
-  
+    <div className="fixed top-0 left-0 h-full w-[50%] sm:w-[40%] md:w-[50%] lg:w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300 opacity-100">
       <img
         src={logo}
         alt="Logo"
