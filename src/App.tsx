@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <SocialMedia />
       <Header />
       <main className="p-4 m-4 max-w-full overflow-hidden">
-        <div className="flex-1">
+        <div className="flex-1 sm:flex flex-col">
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />

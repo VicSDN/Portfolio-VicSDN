@@ -13,9 +13,9 @@ const SocialMedia: React.FC = () => {
 
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setVisible(false); // Ocultar al desplazarse hacia abajo
+        setVisible(false);
       } else {
-        setVisible(true); // Mostrar al desplazarse hacia arriba
+        setVisible(true);
       }
 
       lastScrollY = window.scrollY;
@@ -30,10 +30,11 @@ const SocialMedia: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-full w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300 ${
-        visible ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    className={`fixed top-0 left-0 h-full w-[50%] sm:w-[40%] md:w-[50%] lg:w-[50%] flex flex-col items-center bg-light-gray transition-all duration-300 ${
+      visible ? "opacity-100" : "opacity-0"
+    }`}
+  >
+  
       <img
         src={logo}
         alt="Logo"

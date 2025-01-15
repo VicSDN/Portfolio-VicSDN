@@ -5,7 +5,7 @@ interface CardProps {
   category: string;
   onCardClick: () => void;
   showTitle?: boolean;
-  domain?: string;  
+  domain?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -18,9 +18,8 @@ const Card: React.FC<CardProps> = ({
   domain,
 }) => {
   return (
-    <a
-      href="#"
-      className="group relative block bg-black rounded-lg overflow-hidden shadow-lg"
+    <div
+      className="group relative block bg-black rounded-lg overflow-hidden shadow-lg cursor-pointer"
       style={{
         width: "100%",
         height: "240px",
@@ -36,27 +35,29 @@ const Card: React.FC<CardProps> = ({
           {category}
         </p>
         {showTitle && (
-          <p className="text-xl font-bold text-light-gray sm:text-xl  cursor-pointer">
+          <p className="text-xl font-bold text-light-gray sm:text-xl cursor-pointer">
             {title}
           </p>
         )}
         <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-8 group-hover:translate-y-0">
-          <p className="p-2  text-sm font-semibold bg-stone-500 bg-opacity-70 text-indigo-200">{description}</p>
+          <p className="p-2 text-sm font-semibold bg-stone-500 bg-opacity-70 text-indigo-200">
+            {description}
+          </p>
         </div>
         {domain && (
-  <div className="mt-2 text-center">
-    <a
-      href={domain}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-stone-600 bg-opacity-80 p-2 text-indigo-200 font-bold text-sm hover:underline transition-all duration-300 transform hover:scale-105"
-    >
-      {domain}
-    </a>
-  </div>
-)}
+          <div className="mt-2 text-center">
+            <a
+              href={domain}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-stone-600 bg-opacity-80 p-2 text-indigo-200 font-bold text-sm hover:underline transition-all duration-300 transform hover:scale-105"
+            >
+              {domain}
+            </a>
+          </div>
+        )}
       </div>
-    </a>
+    </div>
   );
 };
 
