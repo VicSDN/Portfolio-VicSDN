@@ -13,10 +13,18 @@
       {
         "title": "Portfolio Personal",
         "description": "Mi portfolio personal, creado con el framework React",
-        "image": ["./assets/images/bootcamp.webp"],
+        "image": ["./assets/images/projects/portfolio.webp"],
         "category": "React y Taildwind",
         "domain": "https://vicsdn.github.io/Portfolio-VicSDN/"
+      },
+      {
+        "title": "ACAF",
+        "description": "Página Web creada para una asociación de festejos, ha sido creada en grupo, y mantenimos contacto con el cliente durante el proyecto",
+        "image": ["./assets/images/projects/ACAF.webp"],
+        "category": "React y Java",
+        "domain": "https://acaf-virid.vercel.app/"
       }
+
     ]
   }
 }
