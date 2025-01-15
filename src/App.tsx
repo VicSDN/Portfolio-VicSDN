@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <Router basename="/Portfolio-VicSDN">
       <SocialMedia />
       <Header />
-      <main className="p-4 m-4  max-w-full overflow-hidden overflow-x-auto min-h-screen">
+      <main className="max-w-full overflow-hidden min-h-screen">
         <div className="flex-1 sm:flex flex-col">
           <Routes>
             <Route path="/" element={<AboutMe />} />
