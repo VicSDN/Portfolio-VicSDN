@@ -14,6 +14,11 @@ const Header: React.FC = () => {
     setDropdownOpen(false);
   };
 
+  // Función para cerrar el menú cuando se hace clic en un enlace
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 right-0 w-full h-16 shadow-lg bg-navy-blue z-40 flex items-center justify-between p-4 lg:w-[50%]">
       <div className="flex items-center">
@@ -33,6 +38,7 @@ const Header: React.FC = () => {
               <Link
                 to="/"
                 className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+                onClick={handleMenuClose} // Cierra el menú al hacer clic
               >
                 {t("aboutMe.title")}
               </Link>
@@ -41,6 +47,7 @@ const Header: React.FC = () => {
               <Link
                 to="/projects"
                 className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+                onClick={handleMenuClose} // Cierra el menú al hacer clic
               >
                 {t("projects.title")}
               </Link>
@@ -49,6 +56,7 @@ const Header: React.FC = () => {
               <Link
                 to="/achievements"
                 className="block text-lg text-white hover:text-sky-blue py-2 sm:py-0"
+                onClick={handleMenuClose} // Cierra el menú al hacer clic
               >
                 {t("achievements.title")}
               </Link>
@@ -68,35 +76,35 @@ const Header: React.FC = () => {
           />
         </button>
         {dropdownOpen && (
-  <ul className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 border">
-    <li>
-      <button
-        onClick={() => handleLanguageChange("es")}
-        className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200 z-40"
-      >
-        <img
-          src={SpanishFlag}
-          alt="Español"
-          className="w-5 h-5 mr-2"
-        />
-        Español
-      </button>
-    </li>
-    <li>
-      <button
-        onClick={() => handleLanguageChange("en")}
-        className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
-      >
-        <img
-          src={EnglishFlag}
-          alt="English"
-          className="w-5 h-5 mr-2"
-        />
-        English
-      </button>
-    </li>
-  </ul>
-)}
+          <ul className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 border">
+            <li>
+              <button
+                onClick={() => handleLanguageChange("es")}
+                className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200 z-40"
+              >
+                <img
+                  src={SpanishFlag}
+                  alt="Español"
+                  className="w-5 h-5 mr-2"
+                />
+                Español
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleLanguageChange("en")}
+                className="flex items-center w-full px-4 py-2 text-left hover:bg-gray-200"
+              >
+                <img
+                  src={EnglishFlag}
+                  alt="English"
+                  className="w-5 h-5 mr-2"
+                />
+                English
+              </button>
+            </li>
+          </ul>
+        )}
       </div>
     </header>
   );
