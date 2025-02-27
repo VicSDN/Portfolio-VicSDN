@@ -16,6 +16,12 @@
         "category": "Technical Training"
       },
       {
+        "title": "Finalist Hackathon F5 - Globant",
+        "description": "Participation in the Hackathon F5 organized by Globant and Factoría F5, reaching the final stage. Event held on February 21, 22, and 23, 2024.",
+        "image": "./assets/images/achievements/hackathon-f5.webp",
+        "category": "Competitions and Hackathons"
+      }
+      {
         "title": "Introduction to Cybersecurity",
         "description": "Networking Academy course covering the basics of cybersecurity and how to protect systems from common threats.",
         "image": ["./assets/images/achievements/CyberIn.webp"],
