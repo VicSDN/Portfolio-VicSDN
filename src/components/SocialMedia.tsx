@@ -87,7 +87,7 @@ const SocialMedia: React.FC = () => {
             className="w-8 h-8 transform transition-transform duration-300 group-hover:scale-125 group-hover:filter group-hover:brightness-75"
           />
           <span className="mt-1 text-gray-400 transition duration-300 group-hover:text-sky-blue">
-            Twitter
+            X
           </span>
         </a>
       </div>
