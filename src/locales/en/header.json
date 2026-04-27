@@ -4,9 +4,9 @@
   "aboutMe": {
     "title": "About Me",
     "description": [
-      "Hello, my name is Víctor Manuel",
-      "I am a web developer specialized in creating functional and attractive digital solutions, based in the Principality of Asturias. My focus is on full-stack web development, interface design, and user experience optimization. I use modern technologies such as Astro, React, and Java.",
-      "Currently, I develop and manage personal projects to constantly improve my technical skills and ensure the highest quality at every stage of the process. I have a driver's license and my own vehicle, which allows me to travel without inconvenience to collaborate on projects that require local presence or assistance in different locations."
+      "Hello, my name is Víctor Manuel.",
+      "I am a technical profile transitioning into the renewable energy sector, currently training as a wind turbine maintenance technician. My background is in industrial logistics and CNC mechanics, and along the way I also trained as a Full Stack web developer, which gives me a distinct technological edge.",
+      "I have a driver's license and my own vehicle, I am available to travel, and I am eager to contribute in a sector with a real future. This portfolio showcases my tech projects, reflecting my more digital side."
     ]
   },
   "projects": {
