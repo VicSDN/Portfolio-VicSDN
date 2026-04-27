@@ -1,40 +1,20 @@
 {
-    "achievements": {
-      "title": "Certificaciones y Cursos",
-      "description": "Aquí están algunas de las certificaciones y cursos que he completado.",
-      "list": [
-        {
-          "title": "Titulo Bachiller",
-          "description": "Bachillerato en Ciencias Sociales, con enfoque en economía, psicología, sociología e historia.",
-          "image": "./assets/images/achievements/bachelor.webp",
-          "category": "Educación Formal"
-        },
-        {
-          "title": "Bootcamp FullStack 750 Horas",
-          "description":"React, Node.js, Java, Spring Boot, MySQL, pruebas (Jest, Vitest) y seguridad (JWT, OAuth2.0). Enfoque en buenas prácticas y herramientas como Git y Vscode.",
-          "image": ["./assets/images/achievements/bootcamp.webp"] ,
-           "category": "Formación Técnica"
-        },
-        {
-          "title": "Finalista Hackathon F5 - Globant",
-          "description": "Participación en la Hackathon F5 organizada por Globant y Factoría F5, alcanzando la fase final. Evento celebrado los días 21, 22 y 23 de febrero de 2024.",
-          "image": "./assets/images/achievements/hackathon-f5.webp",
-          "category": "Competencias y Hackathones"
-        },
-        {
-          "title": "Introducción a la ciberseguridad",
-          "description": "Curso de Networking Academy que cubre los fundamentos de la ciberseguridad y cómo proteger sistemas contra amenazas comunes.",
-          "image": ["./assets/images/achievements/CyberIn.webp"] ,
-           "category": "Formación Técnica"
-        },
-        {
-          "title": "Fundamentos con Python 2",
-          "description": "Curso introductorio sobre Python 2, cubriendo lo esencial para empezar a programar en este lenguaje.",
-          "image": ["./assets/images/achievements/ciscoPython.webp"],
-          "category": "Formación Técnica"
-      }
-      
-      ]
-    }
+  "greeting": "Hola",
+  "meeting": "Bienvenido a mi portafolio",
+  "aboutMe": {
+    "title": "Sobre mí",
+    "description": [
+      "Hola, mi nombre es Víctor Manuel.",
+      "Soy un perfil técnico en transición al sector de las energías renovables, actualmente formándome como técnico de mantenimiento de parques eólicos. Vengo del mundo de la logística industrial y la mecánica CNC, y de camino también me formé como desarrollador web Full Stack, lo que me da una visión tecnológica diferencial.",
+      "Cuento con carnet de conducir y vehículo propio, disponibilidad para desplazarme y muchas ganas de aportar en un sector con futuro real. Este portfolio recoge mis proyectos tecnológicos, que reflejan mi lado más digital."
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Aquí hay algunos de mis proyectos."
+  },
+  "achievements": {
+    "title": "Certificaciones y Cursos",
+    "description": "Aquí están algunas de las certificaciones y cursos que he completado."
   }
-  
+}
