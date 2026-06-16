@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section className="relative top-16 right-0 w-full sm:w-full md:w-1/2 lg:w-1/2 h-auto overflow-y-auto bg-deep-dark-blue p-6 mb-6 sm:mb-8 md:mb-10 ml-auto pb-16">
+    <section className="relative top-16 right-0 w-full sm:w-full md:w-1/2 lg:w-1/2 min-h-screen overflow-y-auto bg-deep-dark-blue p-6 mb-6 sm:mb-8 md:mb-10 ml-auto pb-16">
     <span className="p-2 flex flex-col items-start my-2">
       <h1 className="text-2xl text-neutral-600 font-title font-bold mb-4">
         {t("projects.title")}

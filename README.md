@@ -56,13 +56,5 @@ npm install
 # Iniciar el servidor de desarrollo
 npm run dev
 
-## **Contribuciones**
-¡Las contribuciones son bienvenidas! Si encuentras algún error o deseas agregar nuevas funcionalidades, por favor, sigue estos pasos:
-
-1. **Forkea** este repositorio.
-2. **Crea una nueva rama** para tu función o corrección.
-3. **Realiza los cambios** y asegúrate de que todas las pruebas pasen.
-4. **Envía una solicitud de extracción (pull request).**
-
 ## **Demostración**
 [[Enlace a mi portfolio](https://vicsdn.github.io/Portfolio-VicSDN/)]

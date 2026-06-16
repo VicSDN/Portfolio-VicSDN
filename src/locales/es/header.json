@@ -1,12 +1,13 @@
 {
   "greeting": "Hola",
-  "meeting": "Bienvenido a mi portafolio",
+  "meeting": "Bienvenido a mi portfolio",
   "aboutMe": {
     "title": "Sobre mí",
+    "alt": "Foto de Víctor Manuel",
     "description": [
-      "Hola, mi nombre es Víctor Manuel",
-      "Soy desarrollador web especializado en crear soluciones digitales funcionales y atractivas, con sede en el Principado de Asturias. Mi enfoque está en el desarrollo web full-stack, diseño de interfaces y optimización de la experiencia de usuario. Utilizo tecnologías modernas como Astro, React y Java.",
-      "Actualmente, desarrollo y gestiono proyectos personales para mejorar constantemente mis habilidades técnicas y asegurar la máxima calidad en cada etapa del proceso.Cuento con carnet de conducir y vehículo propio, lo que me permite desplazarme sin inconvenientes para colaborar en proyectos que requieran presencia local o asistencia en diferentes ubicaciones."
+      "Hola, soy Víctor Manuel Menéndez López.",
+      "Técnico de Mantenimiento de Aerogeneradores con certificación GWO completa (Altura, Primeros Auxilios, Cargas, Incendios), obtenida a través del programa Skills de EDP Renovables y Vestas. Vengo de entornos industriales exigentes: mecánica CNC y gestión logística de flota, lo que me da una base técnica sólida para el trabajo en campo.",
+      "Cuento además con formación como desarrollador web Full Stack, útil para la interpretación de datos técnicos y sistemas SCADA. Piloto de drones categoría abierta A1/A3 (AESA 2024). Disponibilidad inmediata y apertura a movilidad nacional e internacional."
     ]
   },
   "projects": {

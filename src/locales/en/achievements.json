@@ -1,37 +1,55 @@
 {
   "achievements": {
-    "title": "Certifications and Courses",
-    "description": "Here are some of the certifications and courses I have completed.",
+    "title": "Certifications & Training",
+    "description": "Technical certifications and specialised training focused on wind turbine maintenance and technology.",
     "list": [
       {
-        "title": "High School Diploma",
-        "description": "High School in Social Sciences, with a focus on economics, psychology, sociology, and history.",
-        "image": "./assets/images/achievements/bachelor.webp",
-        "category": "Formal Education"
+        "title": "GWO — Working at Heights",
+        "description": "Working at Heights with PPE and rescue systems in nacelle environments. Skills Programme — EDP Renewables · Vestas Wind Systems (Jun. 2025).",
+        "image": "./assets/images/achievements/gwo-heights.webp",
+        "category": "GWO · Technical certification"
       },
       {
-        "title": "FullStack Bootcamp 750 Hours",
-        "description": "React, Node.js, Java, Spring Boot, MySQL, testing (Jest, Vitest), and security (JWT, OAuth2.0). Focus on best practices and tools such as Git and Vscode.",
-        "image": ["./assets/images/achievements/bootcamp.webp"],
-        "category": "Technical Training"
+        "title": "GWO — First Aid",
+        "description": "First Aid in industrial environments and working at height. Skills Programme — EDP Renewables · Vestas Wind Systems (Jun. 2025).",
+        "image": "./assets/images/achievements/gwo-firstaid.webp",
+        "category": "GWO · Technical certification"
       },
       {
-        "title": "Finalist Hackathon F5 - Globant",
-        "description": "Participation in the Hackathon F5 organized by Globant and Factoría F5, reaching the final stage. Event held on February 21, 22, and 23, 2024.",
-        "image": "./assets/images/achievements/hackathon-f5.webp",
-        "category": "Competitions and Hackathons"
-      }
-      {
-        "title": "Introduction to Cybersecurity",
-        "description": "Networking Academy course covering the basics of cybersecurity and how to protect systems from common threats.",
-        "image": ["./assets/images/achievements/CyberIn.webp"],
-        "category": "Technical Training"
+        "title": "GWO — Manual Handling",
+        "description": "Safe and ergonomic load handling in wind turbines. Skills Programme — EDP Renovables · Vestas Wind Systems (Jun. 2025).",
+        "image": "./assets/images/achievements/gwo-handling.webp",
+        "category": "GWO · Technical certification"
       },
       {
-        "title": "Fundamentals with Python 2",
-        "description": "Introductory course on Python 2, covering the essentials to get started with programming in this language.",
-        "image": ["./assets/images/achievements/ciscoPython.webp"],
-        "category": "Technical Training"
+        "title": "GWO — Fire Awareness",
+        "description": "Fire extinguishing and evacuation protocols in wind turbines. Skills Programme — EDP Renewables · Vestas Wind Systems (Jun. 2025).",
+        "image": "./assets/images/achievements/gwo-fire.webp",
+        "category": "GWO · Technical certification"
+      },
+      {
+        "title": "Occupational Risk Prevention (PRL)",
+        "description": "Full theoretical training in occupational risk prevention applied to industrial environments. Skills Programme — EDP Renewables · Vestas Wind Systems (Jun. 2025).",
+        "image": "./assets/images/achievements/prl.webp",
+        "category": "Workplace safety"
+      },
+      {
+        "title": "Drone Pilot — Open Category A1/A3",
+        "description": "Licensed drone pilot in Open Category A1/A3, issued by AESA (Spanish Aviation Safety Agency). 2024.",
+        "image": "./assets/images/achievements/drones.webp",
+        "category": "AESA · Official licence"
+      },
+      {
+        "title": "Full Stack Web Development",
+        "description": "750 hours. React, Node.js, REST APIs, PostgreSQL, Git/GitHub. Factoría F5 — 2024.",
+        "image": "./assets/images/achievements/bootcamp.webp",
+        "category": "Tech training"
+      },
+      {
+        "title": "OO Programming & Relational Databases",
+        "description": "720 hours — in progress. Mentiona — pending internship for full qualification.",
+        "image": "./assets/images/achievements/bbdd.webp",
+        "category": "Tech training"
       }
     ]
   }

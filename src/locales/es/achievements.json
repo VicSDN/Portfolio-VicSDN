@@ -1,20 +1,56 @@
 {
-  "greeting": "Hola",
-  "meeting": "Bienvenido a mi portafolio",
-  "aboutMe": {
-    "title": "Sobre mí",
-    "description": [
-      "Hola, mi nombre es Víctor Manuel.",
-      "Soy un perfil técnico en transición al sector de las energías renovables, actualmente formándome como técnico de mantenimiento de parques eólicos. Vengo del mundo de la logística industrial y la mecánica CNC, y de camino también me formé como desarrollador web Full Stack, lo que me da una visión tecnológica diferencial.",
-      "Cuento con carnet de conducir y vehículo propio, disponibilidad para desplazarme y muchas ganas de aportar en un sector con futuro real. Este portfolio recoge mis proyectos tecnológicos, que reflejan mi lado más digital."
-    ]
-  },
-  "projects": {
-    "title": "Proyectos",
-    "description": "Aquí hay algunos de mis proyectos."
-  },
   "achievements": {
-    "title": "Certificaciones y Cursos",
-    "description": "Aquí están algunas de las certificaciones y cursos que he completado."
+    "title": "Certificaciones y Formación",
+    "description": "Certificaciones técnicas y formación especializada orientadas al mantenimiento de aerogeneradores y al desarrollo tecnológico.",
+    "list": [
+      {
+        "title": "GWO — Working at Heights",
+        "description": "Trabajos en Altura con EPI y sistemas de rescate en nacelle. Programa Skills — EDP Renovables · Vestas Wind Systems (jun. 2025).",
+        "image": "./assets/images/achievements/gwo-heights.webp",
+        "category": "GWO · Certificación técnica"
+      },
+      {
+        "title": "GWO — First Aid",
+        "description": "Primeros Auxilios en entorno industrial y trabajo en altura. Programa Skills — EDP Renovables · Vestas Wind Systems (jun. 2025).",
+        "image": "./assets/images/achievements/gwo-firstaid.webp",
+        "category": "GWO · Certificación técnica"
+      },
+      {
+        "title": "GWO — Manual Handling",
+        "description": "Manejo seguro y ergonómico de cargas en aerogeneradores. Programa Skills — EDP Renovables · Vestas Wind Systems (jun. 2025).",
+        "image": "./assets/images/achievements/gwo-handling.webp",
+        "category": "GWO · Certificación técnica"
+      },
+      {
+        "title": "GWO — Fire Awareness",
+        "description": "Extinción de incendios y protocolos de evacuación en aerogeneradores. Programa Skills — EDP Renovables · Vestas Wind Systems (jun. 2025).",
+        "image": "./assets/images/achievements/gwo-fire.webp",
+        "category": "GWO · Certificación técnica"
+      },
+      {
+        "title": "Prevención de Riesgos Laborales (PRL)",
+        "description": "Formación teórica completa en PRL aplicada a entornos industriales. Programa Skills — EDP Renovables · Vestas Wind Systems (jun. 2025).",
+        "image": "./assets/images/achievements/prl.webp",
+        "category": "Seguridad laboral"
+      },
+      {
+        "title": "Piloto de Drones — Categoría Abierta A1/A3",
+        "description": "Habilitación como piloto de drones en categoría abierta A1/A3, expedida por AESA (Agencia Estatal de Seguridad Aérea). 2024.",
+        "image": "./assets/images/achievements/drones.webp",
+        "category": "AESA · Habilitación oficial"
+      },
+      {
+        "title": "Desarrollo Web Full Stack",
+        "description": "750 horas. React, Node.js, APIs REST, PostgreSQL, Git/GitHub. Factoría F5 — 2024.",
+        "image": "./assets/images/achievements/bootcamp.webp",
+        "category": "Formación tecnológica"
+      },
+      {
+        "title": "Programación OO y Bases de Datos Relacionales",
+        "description": "720 horas en curso. Mentiona — pendiente de prácticas para titulación.",
+        "image": "./assets/images/achievements/bbdd.webp",
+        "category": "Formación tecnológica"
+      }
+    ]
   }
 }

@@ -1,30 +1,22 @@
 {
   "projects": {
     "title": "Proyectos Personales",
-    "description": "Mis proyectos personales",
+    "description": "Proyectos desarrollados y mantenidos en producción, que reflejan mi perfil técnico y mi capacidad para llevar soluciones digitales de principio a fin.",
     "list": [
       {
-        "title": "Cangas Cup",
-        "description": "Página Web creada para los aficionados de la Cangas cup donde pueden consultar resultados, informacion de cada equipo y jugador , horarios etc.",
+        "title": "Cangascup.es — Plataforma deportiva",
+        "description": "Plataforma web en producción para la gestión de competiciones deportivas locales: resultados, equipos, jugadores y horarios. Proyecto real con dominio propio, despliegue y mantenimiento continuo.",
         "image": "./assets/images/projects/cangascup.webp",
         "category": "Astro y Supabase",
         "domain": "https://www.cangascup.es"
       },
       {
         "title": "Portfolio Personal",
-        "description": "Mi portfolio personal, creado con el framework React",
+        "description": "Portfolio profesional con presentación personal, proyectos destacados y certificaciones obtenidas. Desarrollado con React y desplegado en GitHub Pages.",
         "image": ["./assets/images/projects/portfolio.webp"],
-        "category": "React y Taildwind",
+        "category": "React y Tailwind",
         "domain": "https://vicsdn.github.io/Portfolio-VicSDN/"
-      },
-      {
-        "title": "ACAF",
-        "description": "Página Web creada para una asociación de festejos, ha sido creada en grupo, y mantenimos contacto con el cliente durante el proyecto",
-        "image": ["./assets/images/projects/ACAF.webp"],
-        "category": "React y Java",
-        "domain": "https://acaf-virid.vercel.app/"
       }
-
     ]
   }
 }
